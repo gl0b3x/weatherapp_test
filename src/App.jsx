@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CityPage from "./Pages/CityPage.jsx";
 import HomePage from "./Pages/HomePage.jsx";
 import { Provider } from "react-redux";
-import { store, persistor } from "./store/store";
+import { store, persistor } from "./Store/store.js";
 import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
