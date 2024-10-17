@@ -1,0 +1,11 @@
+.favoriteStar {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+  color: var(--textColor);
+}

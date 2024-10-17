@@ -1,0 +1,142 @@
+.locationsImage {
+  min-height: 100vh;
+  background: url("/backgroundSearchCity.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.locationsWrapper {
+  padding: 2vh 13vw;
+  background: rgba(13, 13, 54, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.locationsArticle {
+  color: var(--textColor);
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+  font-weight: 700;
+  padding: 25px 0;
+}
+
+.locations:last-child {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.locationBlock {
+  width: 100%;
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+  color: var(--textColor);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--borderColor);
+  padding: 20px 0;
+}
+
+.addFavorite {
+  border: none;
+  cursor: pointer;
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  width: 10%;
+  color: var(--textColor);
+}
+
+.addFavorite svg {
+  fill: var(--textColor);
+}
+
+.nameLocation,
+.infoBlock,
+.infoBlockDesktop {
+  border: none;
+  color: var(--textColor);
+}
+
+.nameLocation {
+  min-width: 15%;
+}
+
+.infoBlock,
+.infoBlockDesktop {
+  width: calc(75% / 4);
+  text-align: center;
+}
+
+.noFavorites {
+  padding: 25px 30px;
+  color: var(--textColor);
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+}
+
+@media only screen and (max-width: 576px) {
+  .locationsWrapper {
+    padding: 2vh 5vw;
+  }
+  .locationsArticle {
+    padding: 10px 0;
+  }
+  .locationBlock {
+    padding: 10px 0;
+  }
+  .addFavorite {
+    width: 15%;
+  }
+  .nameLocation {
+    width: 25%;
+  }
+  .infoBlock {
+    width: 30%;
+  }
+  .infoBlockDesktop {
+    display: none;
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .locationsWrapper {
+    padding: 2vh 5vw;
+  }
+  .locationsArticle {
+    padding: 10px 0;
+  }
+  .locationBlock {
+    padding: 10px 0;
+  }
+  .addFavorite {
+    width: 15%;
+  }
+  .nameLocation {
+    width: 25%;
+  }
+  .infoBlock {
+    width: 30%;
+  }
+  .infoBlockDesktop {
+    display: none;
+    background-color: green;
+  }
+}
